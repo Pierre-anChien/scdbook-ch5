@@ -19,6 +19,13 @@ steps:
     - '--push=true'
   id: skaffold-build
   waitFor: ['package']
+
+  
+- name: 'bash'
+  args: ['echo', 'Hello world!']
+logsBucket: 'LOGS_BUCKET_LOCATION'
+
+ 
 images:
 - $_REGION-docker.pkg.dev/$PROJECT_ID/$_REPO/$_IMAGE
 options:
