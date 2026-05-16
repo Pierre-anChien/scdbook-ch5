@@ -19,7 +19,7 @@ steps:
   id: skaffold-build
   waitFor: ['package']
 images:
-- us-central1-docker.pkg.dev/$PROJECT_ID/scdbook-repo/scdongcp-app:$SHORT_SHA
+- us-central1-docker.pkg.dev/$PROJECT_ID/scdbook-repo/scdongcp-app
 
 
 
